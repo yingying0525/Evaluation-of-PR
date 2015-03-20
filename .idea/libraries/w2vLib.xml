@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="w2vLib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../w2vLib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../w2vLib" recursive="false" />
+  </library>
+</component>
