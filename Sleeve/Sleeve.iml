@@ -8,10 +8,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="c3p0-0.9.1.2" level="project" />
-    <orderEntry type="library" name="Jsoup1.7" level="project" />
-    <orderEntry type="library" name="httpcomponent" level="project" />
-    <orderEntry type="library" name="mysql-connector-5.1" level="project" />
     <orderEntry type="library" name="commons-logging-1" level="project" />
+    <orderEntry type="library" name="httpcomponents" level="project" />
+    <orderEntry type="library" name="Jsoup1.7" level="project" />
   </component>
 </module>
 
