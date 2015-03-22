@@ -8,6 +8,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="w2vLib" level="project" />
+    <orderEntry type="library" name="IK Analyzer 2012FF_hf1" level="project" />
+    <orderEntry type="library" name="commons-io-2.1" level="project" />
+    <orderEntry type="library" name="2" level="project" />
   </component>
 </module>
 
