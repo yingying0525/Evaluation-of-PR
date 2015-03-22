@@ -1,0 +1,6 @@
+1、在getResponse中，DefaultHttpClient执行execute方法时出现connection reset异常，
+  相关资料：http://stackoverflow.com/questions/5280577/apache-httpclient-throws-java-net-socketexception-connection-reset-for-many-dom
+2、在search方法中，reader在readLine时出现timeout异常
+3、个别站点拒绝链接
+4、peer not authenticated
+5、数据库非英文乱码

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="httpcomponent">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../httpcomponents/httpcore/4.3" />
+      <root url="file://$PROJECT_DIR$/../httpcomponents/httpclient/4.3.1" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../httpcomponents/httpcore/4.3" />
+      <root url="file://$PROJECT_DIR$/../httpcomponents/httpclient/4.3.1" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../httpcomponents/httpclient/4.3.1" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../httpcomponents/httpcore/4.3" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../httpcomponents/httpclient/4.3.1" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/../httpcomponents/httpcore/4.3" recursive="false" type="SOURCES" />
+  </library>
+</component>
