@@ -1,16 +1,16 @@
 package word2vec;
 
+import word2vec.domain.WordEntry;
+
 import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-//import java.util.Arrays;
 import java.util.Map.Entry;
 
+//import java.util.Arrays;
 //import org.ansj.util.MatrixUtil;
-
-import word2vec.domain.WordEntry;
 
 public class Word2VEC
 {

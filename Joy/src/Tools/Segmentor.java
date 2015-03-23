@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by hp on 2014/10/31.
+ * Created by hp on 2014/10/31.CountTopPeople.java
  * 读取文件，将其中的字符串用IKAnalyzer分词，存在新的文件中
  */
 public class Segmentor

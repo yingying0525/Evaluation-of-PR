@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lucene">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-core/4.8.0/lucene-core-4.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-queries/4.8.0/lucene-queries-4.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-queryparser/4.8.0/lucene-queryparser-4.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-sandbox/4.7.0/lucene-sandbox-4.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-sandbox/4.7.0/lucene-sandbox-4.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-core/4.8.0/lucene-core-4.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-queries/4.8.0/lucene-queries-4.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-queryparser/4.8.0/lucene-queryparser-4.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene/lucene-sandbox/4.7.0/lucene-sandbox-4.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

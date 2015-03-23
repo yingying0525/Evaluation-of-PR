@@ -9,8 +9,18 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="w2vLib" level="project" />
     <orderEntry type="library" name="IK Analyzer 2012FF_hf1" level="project" />
-    <orderEntry type="library" name="commons-io-2.1" level="project" />
-    <orderEntry type="library" name="2" level="project" />
+    <orderEntry type="library" name="commons-lang" level="project" />
+    <orderEntry type="library" name="commons-io" level="project" />
+    <orderEntry type="library" name="commons-logging-1" level="project" />
+    <orderEntry type="library" name="lucene" level="project" />
+    <orderEntry type="library" name="hibernate" level="project" />
+    <orderEntry type="library" name="dom4j" level="project" />
+    <orderEntry type="library" name="jboss" level="project" />
+    <orderEntry type="library" name="mysql-connector-5.1" level="project" />
+    <orderEntry type="library" name="javassist-3.18.1-GA-javadoc" level="project" />
+    <orderEntry type="library" name="antlr-2.7.7" level="project" />
+    <orderEntry type="library" name="json-lib-2.1" level="project" />
+    <orderEntry type="library" name="gson-2.2.4-javadoc" level="project" />
   </component>
 </module>
 

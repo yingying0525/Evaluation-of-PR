@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="IK Analyzer 2012FF_hf1">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/lib/IK Analyzer 2012FF_hf1" />
+      <root url="jar://$PROJECT_DIR$/lib/IK Analyzer 2012FF_hf1/IKAnalyzer2012FF_u1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/lib/IK Analyzer 2012FF_hf1" recursive="false" />
   </library>
 </component>

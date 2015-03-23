@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="httpclient-4.3">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/httpcomponents/httpclient/4.3.1" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpcore/4.3/httpcore-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpcore/4.3/httpcore-4.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpmime/4.3.1/httpmime-4.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/httpcomponents/httpclient/4.3.1" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpcore/4.3/httpcore-4.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcomponents/httpmime/4.3.1/httpmime-4.3.1-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/httpcomponents/httpclient/4.3.1" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/httpcomponents/httpclient/4.3.1" recursive="false" type="SOURCES" />
+  </library>
+</component>

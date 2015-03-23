@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="hibernate">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/hibernate-core-4.3.4.Final/hibernate-core-4.3.4.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/javax-persistence-2.1-api/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/javax-persistence-2.1-api/hibernate-jpa-2.1-api-1.0.0.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/hibernate-core-4.3.4.Final/hibernate-core-4.3.4.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate/javax-persistence-2.1-api/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
