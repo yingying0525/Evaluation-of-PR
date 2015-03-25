@@ -123,12 +123,13 @@ public class LexiconUtil
 
         //ReadInSet("D:\\EventTeller\\EventTellerCode\\total1M.dic");
 
-        String fileIn1 = "D:\\tempdata\\tempPeopleNew";
+        /*String fileIn1 = "D:\\tempdata\\tempPeopleNew";
         String fileIn2 = "D:\\data\\topPeopleSet";
         String fileOut = "D:\\tempdata\\tempPeopleNewALL";
-        CheckTwoSet(fileIn1, fileIn2, fileOut);
+        CheckTwoSet(fileIn1, fileIn2, fileOut);*/
 
-        //SearchWord("D:\\EventTeller\\EventTellerCode\\people", "明星");
+        SearchWord("D:\\Evolution of People Relationship\\EPR\\Joy\\src\\people", "傅艺伟");
+        SearchWord("D:\\datadd\\name", "傅艺伟");
         //removeWordSet("D:\\EventTeller\\EventTellerCode\\people", "D:\\data\\remove_1.txt");
         //CheckOneSet(fileIn2, "D:\\EventTeller\\EventTellerCode\\日本艺人");
 
