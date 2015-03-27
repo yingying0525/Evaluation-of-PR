@@ -93,7 +93,8 @@ public class Word2VEC
                 for (; startCal.compareTo(endCal) <= 0; startCal.add(Calendar.MONTH, 1))
                 {
                     String time = df.format(startCal.getTime());
-                    String vectorFile = dir + File.separator + "vector_" + time + "--" + time;
+                    System.out.println(time);
+                    String vectorFile = dir + File.separator + "vector_" + time;
                     Word2VEC vec = new Word2VEC();
                     vec.loadJavaModel(vectorFile);
 

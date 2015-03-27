@@ -114,7 +114,7 @@ public class LexiconUtil
 
     public static void main(String[] args)
     {
-        //CheckOneSet("D:\\EventTeller\\EventTellerCode\\total1M.dic", "D:\\EventTeller\\EventTellerCode\\total1M.dic");
+        CheckOneSet("D:\\Evolution of People Relationship\\extraDic\\name(1-8887430)", "D:\\Evolution of People Relationship\\extraDic\\name(1-8887430)");
 
         //boolean b = SearchWord("D:\\EventTeller\\EventTellerCode\\total1M.dic", "麦蒂");
         //System.out.println(b);
@@ -128,8 +128,8 @@ public class LexiconUtil
         String fileOut = "D:\\tempdata\\tempPeopleNewALL";
         CheckTwoSet(fileIn1, fileIn2, fileOut);*/
 
-        SearchWord("D:\\Evolution of People Relationship\\EPR\\Joy\\src\\people", "傅艺伟");
-        SearchWord("D:\\datadd\\name", "傅艺伟");
+        /*SearchWord("D:\\Evolution of People Relationship\\EPR\\Joy\\src\\people", "傅艺伟");
+        SearchWord("D:\\datadd\\name", "傅艺伟");*/
         //removeWordSet("D:\\EventTeller\\EventTellerCode\\people", "D:\\data\\remove_1.txt");
         //CheckOneSet(fileIn2, "D:\\EventTeller\\EventTellerCode\\日本艺人");
 

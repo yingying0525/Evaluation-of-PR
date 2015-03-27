@@ -110,6 +110,7 @@ public class DataGenerator
                 String totalStr = sb.toString();
                 totalStr = totalStr.replaceAll("[\\p{Z}]", "");
                 totalStr = totalStr.replaceAll("[\\p{P}]", "");
+                totalStr = totalStr.toLowerCase();
                 //List<Term> Terms = ToAnalysis.parse(totalStr);
                 List<String> Terms = splitKeywords(totalStr);
                 sb = new StringBuilder() ;
@@ -159,6 +160,7 @@ public class DataGenerator
                         String totalStr = title + content;
                         totalStr = totalStr.replaceAll("[\\p{Z}]", "");
                         totalStr = totalStr.replaceAll("[\\p{P}]", "");
+                        totalStr = totalStr.toLowerCase();
                         if(title.length() < 2 || content.length() < 10)
                             continue;
                         //List<Term> Terms = ToAnalysis.parse(totalStr);

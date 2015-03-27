@@ -1,26 +1,17 @@
 package word2vec;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import love.cq.util.MapCount;
+import word2vec.domain.HiddenNeuron;
+import word2vec.domain.Neuron;
+import word2vec.domain.WordNeuron;
+import word2vec.utilIK.Haffman;
+
+import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Map.Entry;
-
-import love.cq.util.MapCount;
-
-import word2vec.domain.HiddenNeuron;
-import word2vec.domain.Neuron;
-import word2vec.domain.WordNeuron;
-
-import word2vec.utilIK.Haffman;
 
 public class Learn
 {
@@ -382,7 +373,7 @@ public class Learn
     
     //@para start end directory
     //eg. 1 2013-06-01 2013-07-31 datadic (一个文件)
-    //eg. 2 2013-06-01 2013-07-31 datadic (一天一个文件)
+    //eg. 2 filename datadic (训练一个文件成为一个文件)
     //eg. 3 datadic (一个文件夹中的所有文件)
     public static void main(String[] args) throws IOException
     {
@@ -438,40 +429,22 @@ public class Learn
         else
         if (flag.equals("2"))
         {
-            String start = args[1];
-            String end = args[2];
-            String dir = args[3];
-            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-            try
+            String fileName = args[1];
+            String dir = args[2];
+
+            String dataFile = dir + File.separator + "segment_" + fileName;
+            if (!((new File(dataFile)).exists()))
             {
-                Date startDate = df.parse(start);
-                Date endDate = df.parse(end);
-                Calendar startCal = Calendar.getInstance();
-                Calendar endCal = Calendar.getInstance();
-                startCal.setTime(startDate);
-                endCal.setTime(endDate);
-                for (; startCal.compareTo(endCal) <= 0; startCal.add(Calendar.DATE, 1))
-                {
-                    String temp = df.format(startCal.getTime());
-                    String dataFile = dir + File.separator + "segment_" + temp;
-                    if (!((new File(dataFile)).exists()))
-                    {
-                        System.out.println(dataFile + " do not exist!");
-                        continue;
-                    }
-                    else
-                    {
-                        System.out.println("Start Learning...");
-                        Learn learn = new Learn();
-                        long startTime = System.currentTimeMillis();
-                        learn.learnFile(new File(dataFile));
-                        System.out.println("use time " + (System.currentTimeMillis() - startTime));
-                        learn.saveModel(new File(dir + File.separator + "vector_" + temp));
-                    }
-                }
-            } catch (ParseException e)
+                System.out.println(dataFile + " do not exist!");
+            }
+            else
             {
-                e.printStackTrace();
+                System.out.println("Start Learning...");
+                Learn learn = new Learn();
+                long startTime = System.currentTimeMillis();
+                learn.learnFile(new File(dataFile));
+                System.out.println("use time " + (System.currentTimeMillis() - startTime));
+                learn.saveModel(new File(dir + File.separator + "vector_" + fileName));
             }
         }
         else

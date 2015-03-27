@@ -21,7 +21,7 @@ public class Main_NoSql
     public static void main(String[] args)
     {
         int threadNum = Integer.parseInt(args[0]);
-        int dirNum = 5;
+        int dirNum = 500;
         int start = Integer.parseInt(args[1]);
         int end = Integer.parseInt(args[2]);
         List<String> dirs = new ArrayList<String>();
