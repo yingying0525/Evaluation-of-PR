@@ -1,11 +1,11 @@
-package Tools.JsonUtil;
+package bishe.JsonUtil;
 
 /**
  * Created by hp on 2014/3/28.
  */
 
-import Tools.FileUtil;
-import Tools.Statistic;
+import bishe.FileUtil;
+import bishe.Statistics;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -34,12 +34,73 @@ public class JsonMain
         {
             e.printStackTrace();
         }*/
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("2","热门");map.put("4","国内");map.put("8","国外");
+        map.put("16","社会");map.put("32","军事");map.put("64", "健康");
+        map.put("128","体育");map.put("256","娱乐");map.put("512","财经");
+        map.put("1024","科技");map.put("2048","教育");map.put("4096","法律");
+
+        BufferedReader br = FileUtil.Reader("D:\\datadd\\xiaoke\\CountTopEvent");
+        //BufferedWriter bw = FileUtil.Writer("D:\\datadd\\xiaoke\\URLAndEvent.json");
+        Calendar startCal = Statistics.calUtil("2014-01-01");
+        Calendar endCal = Statistics.calUtil("2014-05-31");
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        JSONObject jsonObject = new JSONObject();
+        while (startCal.compareTo(endCal) <= 0)
+        {
+            String time = df.format(startCal.getTime());
+            System.out.println(time);
+            try
+            {
+                String s = br.readLine();
+                //System.out.println(s);
+                JSONObject jsonObject2 = new JSONObject();
+                for (int j = 1; j <= 10; j++)
+                {
+                    s = br.readLine();
+                    //System.out.println(s);
+                    JSONObject jsonObject1 = new JSONObject();
+                    if (s.length() > 1)
+                    {
+                        String[] ss = s.split(" !\\$\\$! ");
+                        System.out.println(ss[0]);
+                        if (ss.length == 1)
+                        {
+                            jsonObject1.put("title", ss[0]);
+                            jsonObject1.put("content", "");
+                        }
+                        else
+                        {
+                            jsonObject1.put("title", ss[0]);
+                            jsonObject1.put("content", ss[1]);
+                        }
+                    }
+                    jsonObject2.put(j+"", jsonObject1);
+                }
+                jsonObject.put(time, jsonObject2);
+                br.readLine();
+            } catch (IOException e)
+            {
+                e.printStackTrace();
+            } catch (JSONException e)
+            {
+                e.printStackTrace();
+            }
+            startCal.add(Calendar.DATE, 1);
+        }
+        try
+        {
+            br.close();
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        jW.writeToFile(jsonObject, "D:\\datadd\\xiaoke\\TopEvent.json");
+
+/*        JSONArray jArray_out = new JSONArray();
+        JsonMain test = new JsonMain();*/
 
 
-
-
-        //JsonMain test = new JsonMain();
-        //test.jsonGenerate();
 
     }
     public Map<String, String> ReadHotPeopleList(String file)
@@ -297,26 +358,22 @@ public class JsonMain
         JSONObject json7 = new JSONObject();
         JSONObject json8 = new JSONObject();
         JSONArray jsonA1 = new JSONArray();
-        JSONArray jsonA2 = new JSONArray();
-        JSONArray jsonA3 = new JSONArray();
         try
         {
-            json2.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            json3.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            json4.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            jsonA2.put(json2).put(json3).put(json4);
-            json1.put("id", "190923").put("name", "李克强").put("relation", jsonA2);
+            json1.put("name", "author-1").put("age", "35");
+            json2.put("author", json1);
+            json3.put("title", "book1").put("price", "$11");
+            json2.put("book", json3);
 
-            json5.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            json6.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            json7.put("id", "427169").put("name", "张高丽").put("sim", "0.7894").put("pid", "190923");
-            jsonA3.put(json5).put(json6).put(json7);
-            json8.put("id", "190923").put("name", "习近平").put("relation", jsonA3);
+            json4.put("name","author2").put("age", 40);
+            json5.put("author",json4);
+            json6.put("title", "book2").put("price", "$22");
+            json5.put("book", json6);
+            jsonA1.put(json2).put(json5);
 
-            jsonA1.put(json1).put(json8);
-            JsonWrite jW = new JsonWrite();
-            jW.writeToFile(jsonA1, "D:\\datadd\\xiaoke\\renwu\\test");
+            json7.put("title", "book").put("signing", jsonA1);
 
+            json8.put("section", json7);
         } catch (JSONException e)
         {
             e.printStackTrace();
